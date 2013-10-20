@@ -30,7 +30,11 @@
 \usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
 \usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
 \usepackage{setspace} %paquete para interlineado
-\usepackage{graphicx}
+\usepackage{graphicx} %para insertar graficos
+\usepackage{parskip} % npi de q es
+\usepackage{color} %colores
+
+
 % These packages are all incorporated in the memoir class to one degree or another...
 
 %%% HEADERS & FOOTERS
@@ -59,11 +63,16 @@
 %%% The "real" document content comes below...
 
 \title{Investigación de Lenguajes - HTML}
+<<<<<<< HEAD
 \author{Angel Gonzalez\\ Fausto Mora\\Christian Vergara}
+=======
+\author{Fausto Mora\\ Christian Vergara \\ Angel Gonzalez}
+\begin{document}
+\author{Javier Tibau}
+>>>>>>> c83f37ea927560365018cb841d502836f3e8957a
 %\date{} % Activate to display a given date or no date (if empty),
          % otherwise the current date is printed 
 
-\begin{document}
 \maketitle
 %\tableofcontents % No hace falta un TOC en un artículo corto
 
@@ -89,16 +98,24 @@ Para escribir HTML lo único que se necesita es un editor de texto ASCII, como E
 
 \section{Ejemplos del Codigo:}
 
-\lstset{language=Pascal}          % Set your language (you can change the language for each code-block optionally)
 
-\begin{lstlisting}[frame=single]  % Start your code-block
-for i:=maxint to 0 do
-begin
-{ do nothing }
-end;
-Write('Case insensitive ');
-Write('Pascal keywords.');
-\end{lstlisting}
+En la imagen (\ref{fig:5.1})  podemos observar un sencillo codigo html 
+
+\begin{figure}[htb]
+\includegraphics[width=0.7\textwidth]{img1.png}
+\caption{Codigo HTML}
+\label{fig:5.1}
+\end{figure}
+
+\singlespace
+En la imagen (\ref{fig:5.2}) tambien observar la generacion del codigo al ser traducido por un navegador
+
+\begin{figure}[htb]
+\includegraphics[width=0.7\textwidth]{img2.png}
+\caption{Codigo HTML ejecutado por navegador}
+\label{fig:5.2}
+\end{figure}
+
 
 
 
