@@ -63,13 +63,13 @@
 %%% The "real" document content comes below...
 
 \title{Investigación de Lenguajes - HTML}
-<<<<<<< HEAD
-\author{Angel Gonzalez\\ Fausto Mora\\Christian Vergara}
-=======
+
+
+
 \author{Fausto Mora\\ Christian Vergara \\ Angel Gonzalez}
 \begin{document}
 \author{Javier Tibau}
->>>>>>> c83f37ea927560365018cb841d502836f3e8957a
+
 %\date{} % Activate to display a given date or no date (if empty),
          % otherwise the current date is printed 
 
@@ -92,6 +92,24 @@ Los programadores utilizan el lenguaje HTML para crear sus páginas web, estos u
 
 \section{Características}
 \section{Historia}
+
+\noindent Fue el físico Tim Berners-Lee (quien laboraba en el CERN, Organización Europea para la Investigación NUclear por sus siglas en ingles) quien dió inicio a la historia del lenguaje HTML a finales de la década de los 80's. Para entonces, ya había nacido el concepto de "hipertexto", el cual era un sistema capaz de dejar que los usuarios accedan a información relacionado con los documentos que estaban consultando, lo que hoy serían los enlaces de las páginas web.\\
+
+\noindent Tras proponer un nuevo sistema de "hipertexto", Tim Berners-Lee empezó el desarrollo de HTML a partir de SGML (\oops{Standar Generalized Markup Language}), que era un estándar ISO de 1986 empleado para la organización y etiquetado de textos, es decir que servía para especificar las reglas de etiquetado de documentos. HTML toma un conjunto de etiquetas existentes en SGML, sin embargo incluye las implementadas por su creador. Luego de finalizar su desarrollo, Tim Berners-Lee lo dió a conocer en  una convocatoria que tenía como fin recibir propuestas referentes al desarrollo de un sistema de "hipertexto" para Internet.\\
+
+\noindent Entre los años 1990 y 1993 aparecen las primeras versiones de HTML, las cuales no estaban estandarizadas debido a que su uso no estaba muy extendido. Fue en 1991 cuando se publicó el primer documento con la descripción del lenguaje HTML nombrado HTMLTags (\oops{Etiquetas HTML}). EL primer intento de estandarización se da cuando nace HTML 1.0 y esta presente en un documento escrito por Tim Berners-Lee y Daniel Conolly. Esta primera versión de HTML no disponía de elementos indispensables para las páginas web actuales tales como tablas y formularios.\\
+
+\noindent En 1993 se empezó a trabajar en la especificación de la siguiente versión de HTML, llamado HTMLplus (HTML+) pero que nunca llego a estandarizarse. La principal novedad de esta versión de HTML radica en la presencia de tablas y formularios, por primera vez en la historia del Lenguaje. Aunque en esta versión del lenguaje se intentó agregar la característica de incluir fórmulas matemáticas, esta nunca se dió. En cambio dió lugar al origen de un nuevo lenguaje llamado MathML. El único navegador capaz de aceptar etiquetas de HTML+ fue el llamado Arena, que fue creado con el fin de probar sus características.\\
+
+\noindent En 1994 es fundado el W3C, que se encarga hasta hoy del desarrollo de las tecnologías que se usan en la web. Ya en 1995 nace HTML 2.0, el primero de todos es ser estandarizado. A pesar de ello, este proyecto no era ampliamente recomendado por el W3C, ya que era un proyecto \oops{Request-for-Coments}. En estos tiempos se dió a conocer la llamada guerra de los navegadores entre Microsoft y Netscape.\\
+
+\noindent EN 1997 se publica HTML 3.2 conocida como la primera versión estandarizada de HTML por la W3C y a finales de 1999 se publicaba la última versión de HTML de ese entonces, HTML 4.1.\\
+
+\noindent A partir de entonces el W3C decidió abandonar el desarrollo de HTML concentrando su gestión en el desarrollo de XML, que es considerado un meta lenguaje, ya que su objetivo es definir reglas para la implementación de otros lenguajes, es decir, que era una versión mejorada de SGML.\\
+
+\noindent En Enero del 2000 se dió a conocer XHTML, que no era mas que una reimplementación de HTML 4 utilizando los estándares fijados en XML 1.0. Este último era practicamente igual a HTML 4.01, sin embargo daba reglas más estrictas para que un documento sea considerado válido. Por ser un lenguaje muy estricto XHTML no triunfó.\\
+
+\noindent Para el año 2004 se formó una organización que se encargaría del desarrollo de un HTML más amigable con la gente. La organización llamada WHATWG estaba formada por Apple, Mozilla y Opera. En este punto la W3C rectifica y se une a WHATWG en su proyecto. Producto de esto se crea HTML 5. Aunque aún es un lenguaje en desarrollo ya existen múltiples desarrolladores que lo usan debido a las novedades que presenta.\\
 \section{Tutorial de Instalación}
 Para escribir HTML lo único que se necesita es un editor de texto ASCII, como EDIT del MS-DOS o el Bloc de notas de Windows. \singlespace
 \thinspace Existen una serie de programas que ayudan en la elaboración de documentos HTML, como HTMLED (shareware) o HTML Assistant, ambos para Windows, pero no son imprescindibles para escribir el código. Lo que si es necesario es un programa cliente WWW, tal como Mosaic, o Netscape, para probar el documento a medida que lo vamos desarrollando.
@@ -102,7 +120,7 @@ Para escribir HTML lo único que se necesita es un editor de texto ASCII, como E
 En la imagen (\ref{fig:5.1})  podemos observar un sencillo codigo html 
 
 \begin{figure}[htb]
-\includegraphics[width=0.7\textwidth]{img1.png}
+\includegraphics[width=0.7\textwidth]{imagenes/img1.png}
 \caption{Codigo HTML}
 \label{fig:5.1}
 \end{figure}
@@ -111,7 +129,7 @@ En la imagen (\ref{fig:5.1})  podemos observar un sencillo codigo html
 En la imagen (\ref{fig:5.2}) tambien observar la generacion del codigo al ser traducido por un navegador
 
 \begin{figure}[htb]
-\includegraphics[width=0.7\textwidth]{img2.png}
+\includegraphics[width=0.7\textwidth]{imagenes/img2.png}
 \caption{Codigo HTML ejecutado por navegador}
 \label{fig:5.2}
 \end{figure}
