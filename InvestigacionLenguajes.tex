@@ -52,6 +52,8 @@
 %%% ToC (table of contents) APPEARANCE
 \usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
 \usepackage{color}
+\usepackage{listings}
+
 \usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
 \renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
 \renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
@@ -61,6 +63,29 @@
 \usepackage[spanish]{babel}
 \usepackage{listings} 
 %%% The "real" document content comes below...
+\lstset{language=html,caption={Ejemplo Basico: Hola Mundo},label=DescriptiveLabel}
+
+   
+\lstdefinestyle{customc}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  frame=L,
+  xleftmargin=\parindent,
+  language=C,
+  showstringspaces=false,
+  basicstyle=\footnotesize\ttfamily,
+ keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+ stringstyle=\color{red},
+}
+
+
+\lstset{escapechar=@,style=customc}
+
+
+
+
 
 \title{Investigación de Lenguajes - HTML}
 
@@ -176,14 +201,24 @@ En la imagen (\ref{fig:6.1}) observamos el ejemplo Hola Mundo y en la imagen  (\
 
 \end{center}
 
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.8\textwidth]{imagenes/Hola_MundoCod.png}
-\caption{Codigo HTML del "Hola Mundo"}
-\label{fig:6.2}
-\end{figure}
+\begin{lstlisting}[frame=single]  % Start your code-block
+
+<HTML>
+  <HEAD>
+   <TITLE> "Hola Mundo"</TITLE>
+
+   </HEAD>
+     <BODY bgcolor=grey>
+      <font size="+3">Lenguajes de Programacion </font><br>
+      <font size="+3"><font color="white"> HOLA MUNDO!
+  </font></font><br>
+</BODY>
+</HTML>
 
 
+
+
+\end{lstlisting}
 
 
 
