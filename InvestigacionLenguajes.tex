@@ -219,6 +219,7 @@ En la imagen (\ref{fig:6.1}) observamos el ejemplo Hola Mundo y en la imagen  (\
 
 \end{lstlisting}
 
+
 \begin{lstlisting}[frame=single]  % Start your code-block
 
 <html>
@@ -239,6 +240,69 @@ En la imagen (\ref{fig:6.1}) observamos el ejemplo Hola Mundo y en la imagen  (\
   </form>
 </html>
 
+\end{lstlisting}
+
+\begin{lstlisting}[frame=single]  % Start your code-block
+<html>
+    <title>FACULTAD DE INGENIERIA EN ELECTRICIDAD Y COMPUTACION</title>
+      <body><B>
+       <font face="ARIAL BLACK">
+     <font color="blue">
+        <font size="+2">EJEMPLO MANEJO DE BOTONES</font><BR></B>
+   <form>
+    Ejemplo Boton1<input type=button name=b1 value=Clic1 <br><br>
+    Ejemplo Boton2<input type=button name=b1 value=Clic2<br><br>
+      <input type=reset value=LIMPIAR>
+    </body></form>
+</html>
+\end{lstlisting}
+
+
+\begin{lstlisting}[frame=single]  % Start your code-block
+
+<html>
+  <head>
+
+    <title>FACULTAD DE INGENIERIA EN ELECTRICIDAD Y COMPUTACION</title>
+    </head>
+      <body>
+          <h3>Informacion sobre el producto</h3>
+
+     <fieldset>
+     <legend>Datos basicos</legend>
+
+       <input type="text" name="nombre" id="nombre" size="50" maxlength="250" >
+      <br><br>
+
+     <textarea name="descripcion" id="descripcion" cols="40" rows="5"></textarea>
+    <br><br>
+   Foto <input type="file" name="foto" />
+   <br><br>
+    <input name="contador" type="checkbox" value="si" > Anadir contador de visitas
+     </fieldset>
+      <fieldset>
+       <legend>Datos economicos</legend>
+
+
+        <input type="text" size="5" id="precio" name="precio" > &dollar;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+         <select id="impuestos" name="impuestos">
+         <option value="4">4</option>
+         <option value="7">7</option>
+         <option value="16">16</option>
+         <option value="25">25</option>
+          </select>
+           <br><br>
+         <label>Promocion</label> <br>
+         <input type="radio" name="promocion" value="ninguno" checked="checked"> Ninguno
+         <br>
+        <input type="radio" name="promocion" value="portes" > Transporte gratuito <br>
+     <input type="radio" name="promocion" value="descuento" > Descuento 
+   </fieldset>
+  </form>
+</body>
+</html>
 \end{lstlisting}
 
 
