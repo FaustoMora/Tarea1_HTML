@@ -63,7 +63,7 @@
 \usepackage[spanish]{babel}
 \usepackage{listings} 
 %%% The "real" document content comes below...
-\lstset{language=html,caption={Ejemplo Basico: Hola Mundo},label=DescriptiveLabel}
+\lstset{language=html,caption={Ejemplos Basicos: Hola Mundo y otros programas introductorios},label=DescriptiveLabel}
 
    
 \lstdefinestyle{customc}{
@@ -91,9 +91,9 @@
 
 
 
-\author{Fausto Mora\\ Christian Vergara \\ Angel Gonzalez}
+\author{Fausto Mora, Christian Vergara, \\ Angel Gonzalez}
 \begin{document}
-\author{Javier Tibau}
+
 
 %\date{} % Activate to display a given date or no date (if empty),
          % otherwise the current date is printed 
@@ -111,7 +111,7 @@ Los programadores utilizan el lenguaje HTML para crear sus páginas web, estos u
 
 \noindent El eje principal de HTML es la \oops{referenciación} , es decir, para insertar contenido multimedia como fotos, música, videos, archivos, etc , estos no van dentro del código de la página, sino que se hace referencia a los mismos que se encuentran en una ubicación externa. El navegador que interpreta el código HTML une todos estos archivos mostrando así, una página final, mientras que el proceso de creación del código HTML contiene unicamente texto. Ya que éste es un lenguaje estandar es necesario que todos los navegadores ejecuten de la misma manera el código.\\
 
-\noindent A lo largo del desarrollo de HTML, éste ha incorporado diferentes características para adaptarlo a nuevas plataformas (smartphones, tablet, etc), Estos cambios son añadidos a los navegadores cada vez que estos lanzan una nueva versión o actualización. Para la correcta interpretación de una nueva versión de HTML es necesario que los navegadores esten actualizados. Por el contrario las versiones actuales de navegadores por lo general mantienen la interpretación de versiones anteriores de HTML, para poder visualizar el contenido de aplicaciones desarrolladas por las mismas, aunque la apariencia no sea moderna.\\
+\noindent A lo largo del desarrollo de HTML, éste ha incorporado diferentes características para adaptarlo a nuevas plataformas (smartphones, tablet, etc), Estos cambios son añadidos a los navegadores cada vez que estos lanzan una nueva versión. Para la correcta interpretación de una nueva versión de HTML es necesario que los navegadores esten actualizados. Por el contrario las versiones actuales de navegadores por lo general mantienen la interpretación de versiones anteriores de HTML, para poder visualizar el contenido de aplicaciones desarrolladas por las mismas, aunque la apariencia no sea moderna.\\
 
 
 
@@ -218,6 +218,31 @@ En la imagen (\ref{fig:6.1}) observamos el ejemplo Hola Mundo y en la imagen  (\
 
 
 \end{lstlisting}
+
+\begin{lstlisting}[frame=single]  % Start your code-block
+
+<html>
+  <title>FACULTAD DE INGENIERIA EN ELECTRICIDAD Y COMPUTACION</title>
+   <body>
+   <B>
+    <font face="ARIAL BLACK">
+    <font color="red">
+    <font size="+2">INGRESO AL SISTEMA</font><BR>
+   </B>
+   <form>
+    Usuario: <input name=email value="" <br><br>
+    Password: <input type=password name=pass  size=20<br><br>
+
+    <input type=reset value=INGRESAR>
+
+   </body>
+  </form>
+</html>
+
+\end{lstlisting}
+
+
+
 
 \begin{thebibliography}{X}
 \bibitem{HTML} \textsc{Elisabeth Robson} and \textsc{Eric Freeman}. (2012) Head First HTML with Css \& XHTML.
